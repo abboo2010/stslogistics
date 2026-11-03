@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>STS Logistics | Freight Forwarder in Kota Kinabalu, Sabah</title>
+<meta name="description" content="STS Logistics, established in 2007, is a Sabah-based freight forwarder offering sea freight, air freight, cold chain logistics, warehousing and distribution, customs clearance and event logistics.">
+<link rel="icon" href="images/sts-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --purple: #3A1456;
+  --purple-2: #55257D;
+  --violet: #6B2FA0;
+  --gold: #D4A55A;
+  --gold-hover: #E2B86F;
+  --gold-text: #8A5A12;
+  --gold-soft: #F0C98A;
+  --text: #2A2133;
+  --muted: #5E5468;
+  --bg: #F6F3F9;
+  --white: #FFFFFF;
+  --line: #E2DAEA;
+  --tint: #F0E8F7;
+  --head: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(58, 20, 86, .12);
+  --gutter-l: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: var(--white); color: var(--text); font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--head); color: var(--purple); line-height: 1.15; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--violet); }
+:focus-visible { outline: 3px solid var(--violet); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: #fff; }
+
+.wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+.section { padding-block: clamp(64px, 8vw, 104px); }
+.section-head { max-width: 40rem; margin-bottom: clamp(32px, 4.5vw, 52px); }
+.section-head h2 { font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 800; letter-spacing: -.01em; }
+.section-head p { margin-top: .9rem; color: var(--muted); font-size: 1.1rem; }
+.kicker { display: inline-block; margin-bottom: .8rem; color: var(--gold-text); font-weight: 700; font-size: .95rem; letter-spacing: .02em; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 50px; padding: 0 1.6rem; border: 2px solid transparent; border-radius: 8px; font: 700 1rem/1 var(--head); text-decoration: none; cursor: pointer; transition: background-color .15s, border-color .15s, color .15s; }
+.btn-gold { background: var(--gold); color: var(--purple); }
+.btn-gold:hover { background: var(--gold-hover); }
+.btn-outline { border-color: rgba(255,255,255,.7); color: #fff; background: transparent; }
+.btn-outline:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+.btn-navy { background: var(--purple); color: #fff; }
+.btn-navy:hover { background: var(--purple-2); }
+.btn-sm { min-height: 42px; padding: 0 1.2rem; font-size: .95rem; }
+
+/* Top bar */
+.topbar { background: var(--purple); color: #E3D8EE; font-size: .92rem; }
+.topbar-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1.5rem; padding-block: .55rem; }
+.topbar a { color: #fff; text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.topbar-group { display: flex; flex-wrap: wrap; gap: .2rem 1.6rem; }
+
+/* Header */
+.site-head { position: sticky; top: 0; z-index: 40; background: var(--white); border-bottom: 1px solid var(--line); }
+.head-row { display: flex; align-items: center; gap: 1.5rem; min-height: 78px; }
+.brand img { height: 52px; width: auto; }
+.nav { margin-left: auto; display: flex; align-items: center; gap: 2.2rem; }
+.nav a:not(.btn) { color: var(--purple); font-family: var(--head); font-weight: 700; font-size: .98rem; text-decoration: none; padding-block: .5rem; border-bottom: 2px solid transparent; }
+.nav a:not(.btn):hover { border-bottom-color: var(--gold); }
+.menu-btn { display: none; margin-left: auto; min-height: 44px; padding: 0 1rem; border: 1.5px solid var(--purple); border-radius: 8px; background: none; color: var(--purple); font: 700 .95rem var(--head); cursor: pointer; }
+
+/* Hero */
+.hero { position: relative; color: #fff; background: linear-gradient(135deg, #3A1456, #6B2FA0); isolation: isolate; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(95deg, rgba(40,12,62,.95) 0%, rgba(40,12,62,.82) 45%, rgba(40,12,62,.35) 100%); }
+.hero-inner { padding-block: clamp(72px, 10vw, 140px) clamp(120px, 14vw, 180px); max-width: 44rem; }
+.hero .kicker { color: var(--gold-soft); }
+.hero h1 { color: #fff; font-size: clamp(2.4rem, 5.6vw, 4.2rem); font-weight: 800; letter-spacing: -.02em; line-height: 1.08; }
+.hero-sub { margin-top: 1rem; font-family: var(--head); font-weight: 700; font-size: 1.15rem; color: var(--gold-soft); }
+.hero p.lede { margin-top: 1.2rem; max-width: 36rem; font-size: 1.15rem; color: #E8DEF2; }
+.hero-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .9rem; }
+
+/* Trust tiles overlapping hero */
+.tiles { position: relative; z-index: 2; margin-top: -72px; }
+.tiles-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.tile { background: var(--white); border-radius: var(--radius); padding: 1.7rem 1.6rem; box-shadow: var(--shadow); border-top: 4px solid var(--gold); }
+.tile svg { width: 40px; height: 40px; stroke: var(--violet); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tile h3 { margin-top: 1rem; font-size: 1.3rem; font-weight: 800; }
+.tile p { margin-top: .5rem; color: var(--muted); font-size: 1rem; }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+.about-media { position: relative; }
+.about-media img { width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; border-radius: var(--radius); background: linear-gradient(135deg, #3A1456, #6B2FA0); box-shadow: var(--shadow); }
+.about-badge { position: absolute; right: -14px; bottom: -22px; background: var(--purple); color: #fff; border-radius: var(--radius); padding: 1.1rem 1.5rem; box-shadow: var(--shadow); }
+.about-badge b { display: block; font-family: var(--head); font-size: 2rem; font-weight: 800; line-height: 1; }
+.about-badge span { font-size: .95rem; color: #E3D8EE; }
+.about-copy h2 { font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 800; letter-spacing: -.01em; }
+.about-copy .lede { margin-top: 1.1rem; display: grid; gap: .9rem; color: var(--muted); }
+.mvc { margin-top: 1.8rem; display: grid; gap: 1rem; }
+.mvc div { padding-left: 1.1rem; border-left: 3px solid var(--line); }
+.mvc h3 { font-size: 1.05rem; font-weight: 800; }
+.mvc p { margin-top: .25rem; color: var(--muted); font-size: 1rem; }
+
+/* Services */
+.services { background: var(--bg); }
+.svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.svc-card { display: flex; flex-direction: column; background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); text-align: left; padding: 0; font: inherit; color: inherit; cursor: pointer; transition: box-shadow .2s, transform .2s, border-color .2s; }
+.svc-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: #D6CBE2; }
+.svc-card .ph { overflow: hidden; background: linear-gradient(135deg, #3A1456, #6B2FA0); }
+.svc-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s; }
+.svc-card:hover img { transform: scale(1.04); }
+.svc-body { display: flex; flex-direction: column; gap: .5rem; padding: 1.4rem 1.5rem 1.6rem; flex: 1; }
+.svc-body h3 { font-size: 1.3rem; font-weight: 800; }
+.svc-body .tag { color: var(--gold-text); font-weight: 700; font-size: .95rem; }
+.svc-body p { color: var(--muted); font-size: 1rem; }
+.svc-more { margin-top: auto; padding-top: .6rem; color: var(--violet); font-family: var(--head); font-weight: 700; font-size: .95rem; }
+.svc-more::after { content: " \203A"; font-size: 1.2em; }
+
+/* Dialog */
+dialog.svc-dialog { width: min(920px, calc(100vw - 24px)); max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); padding: 0; border: 0; border-radius: var(--radius); background: var(--white); color: var(--text); box-shadow: 0 30px 80px rgba(0,0,0,.4); overflow: auto; }
+dialog.svc-dialog::backdrop { background: rgba(30, 8, 48, .72); }
+.dlg-photo { width: 100%; aspect-ratio: 16 / 6.5; object-fit: cover; background: linear-gradient(135deg, #3A1456, #6B2FA0); }
+.dlg-close { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(255,255,255,.95); color: var(--purple); font-size: 1.6rem; line-height: 1; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,.3); }
+.dlg-body { padding: clamp(22px, 3.5vw, 40px); }
+.dlg-body h3 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 800; }
+.dlg-tag { margin-top: .4rem; color: var(--gold-text); font-family: var(--head); font-weight: 700; font-size: 1.1rem; }
+.dlg-intro { margin-top: 1rem; display: grid; gap: .8rem; color: var(--muted); }
+.dlg-cols { margin-top: 1.8rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+.dlg-col { display: grid; gap: .5rem; align-content: start; padding: 1.2rem 1.2rem 1.3rem; background: var(--bg); border-radius: 10px; color: var(--muted); font-size: 1rem; }
+.dlg-col h4 { font-size: 1.05rem; font-weight: 800; }
+.dlg-ben { margin: 1.6rem 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: .55rem; }
+.dlg-ben li { padding: .45rem .9rem .45rem .8rem; border-radius: 999px; background: #F0E8F7; color: var(--purple); font-weight: 600; font-size: .95rem; line-height: 1.2; }
+.dlg-ben li::before { content: "\2713"; margin-right: .45rem; color: var(--gold-text); font-weight: 800; }
+.dlg-close-line { margin-top: 1.4rem; color: var(--text); }
+.dlg-actions { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+
+/* Values band */
+.values { background: var(--purple); color: #fff; position: relative; overflow: hidden; }
+.values::after { content: ""; position: absolute; right: -120px; top: -120px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(107,47,160,.45), transparent 70%); pointer-events: none; }
+.values-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+.values h2 { color: #fff; font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 800; letter-spacing: -.01em; }
+.values .lede { margin-top: 1rem; color: #DDD0EA; max-width: 34rem; }
+.values .btn { margin-top: 1.8rem; }
+.val-list { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.val-list li { padding: 1.3rem 1.4rem; border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); background: rgba(255,255,255,.05); font-family: var(--head); font-weight: 800; font-size: 1.2rem; }
+.val-list li::before { content: ""; display: block; width: 28px; height: 3px; margin-bottom: .8rem; background: #D4A55A; border-radius: 2px; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+.contact-copy h2 { font-size: clamp(1.9rem, 3.8vw, 2.75rem); font-weight: 800; letter-spacing: -.01em; }
+.contact-copy .lede { margin-top: 1rem; color: var(--muted); }
+.cinfo { margin: 1.8rem 0 0; padding: 0; list-style: none; display: grid; gap: 1.1rem; }
+.cinfo li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 1rem; align-items: start; }
+.cinfo .ic { width: 44px; height: 44px; border-radius: 10px; background: #F0E8F7; display: grid; place-items: center; }
+.cinfo svg { width: 22px; height: 22px; stroke: var(--violet); fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.cinfo b { display: block; font-family: var(--head); color: var(--purple); font-size: .98rem; }
+.cinfo span, .cinfo a { overflow-wrap: anywhere; }
+.cinfo a { color: var(--text); }
+.map-link { display: inline-block; margin-top: .3rem; font-weight: 600; }
+
+.form { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(22px, 3.2vw, 38px); display: grid; gap: 1.1rem; }
+.form h3 { font-size: 1.6rem; font-weight: 800; }
+.form .note { margin-top: -.5rem; color: var(--muted); font-size: .98rem; }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+.field { display: grid; gap: .4rem; }
+.field label { font-family: var(--head); font-weight: 700; font-size: .92rem; color: var(--purple); }
+.field input, .field select, .field textarea { width: 100%; min-height: 50px; padding: .75rem .9rem; border: 1.5px solid #D6CBE2; border-radius: 8px; background: #fff; color: var(--text); font: 400 1rem/1.4 var(--body); }
+.field textarea { min-height: 140px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--violet); outline: 3px solid rgba(107,47,160,.2); outline-offset: 0; }
+.status { min-height: 1.5rem; font-weight: 600; }
+.status.ok { color: #1D6B3B; }
+.status.err { color: #B3261E; }
+.hp { position: absolute; left: -9999px; }
+
+/* Footer */
+.site-foot { background: #24093A; color: #CBBDDB; }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: clamp(24px, 4vw, 56px); padding-block: 56px 40px; }
+.foot-logo { display: inline-block; background: #fff; padding: 8px 12px; border-radius: 8px; }
+.foot-logo img { height: 44px; width: auto; }
+.site-foot p { margin-top: 1rem; font-size: .98rem; max-width: 24rem; }
+.site-foot h4 { color: #fff; font-size: 1rem; font-weight: 800; margin-bottom: .9rem; }
+.site-foot ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .5rem; font-size: .98rem; }
+.site-foot a { color: #CBBDDB; text-decoration: none; }
+.site-foot a:hover { color: #fff; text-decoration: underline; }
+.foot-bottom { border-top: 1px solid rgba(255,255,255,.12); }
+.foot-bottom-row { display: flex; flex-wrap: wrap; gap: .8rem 2rem; justify-content: space-between; align-items: center; padding-block: 1.3rem; font-size: .92rem; }
+.credit { display: flex; align-items: center; gap: .7rem; }
+.credit img { height: 26px; width: auto; }
+.credit a { color: #fff; }
+
+@media (max-width: 1000px) {
+  .svc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-grid, .values-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-media { max-width: 560px; margin-bottom: 1rem; }
+  .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dlg-cols { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .menu-btn { display: inline-flex; align-items: center; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: #fff; border-bottom: 1px solid var(--line); padding: .4rem var(--gutter-r) 1.2rem var(--gutter-l); box-shadow: 0 14px 20px rgba(40,12,62,.08); }
+  .nav.open { display: flex; }
+  .nav a:not(.btn) { padding: .95rem 0; border-bottom: 1px solid var(--line); }
+  .nav .btn { margin-top: 1rem; }
+  .topbar-row { justify-content: flex-start; }
+  .topbar .hide-sm { display: none; }
+  .tiles-grid { grid-template-columns: minmax(0, 1fr); }
+  .tiles { margin-top: -56px; }
+  .svc-grid { grid-template-columns: minmax(0, 1fr); }
+  .val-list { grid-template-columns: minmax(0, 1fr); }
+  .row2 { grid-template-columns: minmax(0, 1fr); }
+  .foot-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-badge { right: 10px; bottom: -18px; }
+  .hero::before { background: linear-gradient(180deg, rgba(40,12,62,.9), rgba(40,12,62,.82)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .svc-card, .svc-card img { transition: none; }
+  .svc-card:hover { transform: none; }
+  .svc-card:hover img { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-row">
+    <div class="topbar-group">
+      <span>Mobile: <a href="tel:+60128666368">+6012 866 6368</a></span>
+      <span><a href="mailto:info@stslogistics.com.my">info@stslogistics.com.my</a></span>
+    </div>
+    <span class="hide-sm">City Mall, Jalan Lintas, Kota Kinabalu, Sabah</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="STS Logistics, home"><img src="images/sts-logo.jpg" alt="STS Logistics" width="135" height="52"></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About us</a>
+      <a href="#services">Our services</a>
+      <a href="#contact">Contact us</a>
+      <a class="btn btn-gold btn-sm" href="#contact" data-service="">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero on-dark" aria-labelledby="hero-title">
+    <img class="hero-img" src="https://www.stslogistics.com.my/images/headers/seafreight.png" alt="" fetchpriority="high">
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="kicker">Freight forwarding since 2007</span>
+        <h1 id="hero-title">Your trusted logistics partner from Malaysia</h1>
+        <p class="hero-sub">Reliable. Efficient. Seamless.</p>
+        <p class="lede">STS delivers freight solutions across air, sea, and land. We combine industry expertise, advanced coordination, and customer-focused service so every shipment reaches its destination safely and on time.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#contact" data-service="">Request a quote</a>
+          <a class="btn btn-outline" href="#services">Explore our services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tiles" aria-label="Why customers choose STS">
+    <div class="wrap tiles-grid">
+      <article class="tile">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/><ellipse cx="20" cy="20" rx="6.5" ry="15"/><path d="M5 20h30M7 11.5h26M7 28.5h26"/></svg>
+        <h3>Global reach</h3>
+        <p>Air, sea, and land routes, supported by trusted shipping and airline partners.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v10c0 8-5.5 14-13 17C12.500 33 7 27 7 19V9z"/><path d="M14 20l4.500 4.500L27 15.500"/></svg>
+        <h3>Reliable delivery</h3>
+        <p>Careful handling and proactive updates from pickup to the final address.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="14" cy="14" r="5.500"/><circle cx="28" cy="16" r="4.500"/><path d="M4 33c0-6 4.500-10 10-10s10 4 10 10M25 24c5-1 11 2 11 8"/></svg>
+        <h3>Customer focused</h3>
+        <p>Long-term partnerships built on consistent, high-quality service.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-media">
+        <img src="https://www.stslogistics.com.my/images/Port%20loading%20DP%20W.png" alt="Cargo being loaded at the port" width="900" height="760" loading="lazy">
+        <div class="about-badge"><b>Est. 2007</b><span>Kota Kinabalu, Sabah</span></div>
+      </div>
+      <div class="about-copy">
+        <span class="kicker">About STS Logistics</span>
+        <h2 id="about-title">A Sabah-based forwarder that moves businesses forward</h2>
+        <div class="lede">
+          <p>STS, established in 2007, is a Sabah-based logistics and freight forwarding company committed to delivering reliable, efficient, and cost-effective supply chain solutions across air, sea, and land.</p>
+          <p>With strong industry expertise and operational excellence, we support businesses of all sizes in managing logistics with confidence and precision.</p>
+        </div>
+        <div class="mvc">
+          <div><h3>Our mission</h3><p>To provide seamless logistics solutions that empower businesses to grow through efficiency, reliability, and innovation.</p></div>
+          <div><h3>Our vision</h3><p>To be a leading logistics partner in the region, recognized for excellence, trust, and customer satisfaction.</p></div>
+          <div><h3>Our commitment</h3><p>We are dedicated to building long-term partnerships with our clients by consistently delivering high-quality logistics solutions. Our team combines experience, innovation, and a customer-centric approach to ensure your business operations run smoothly and efficiently.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Our services</span>
+        <h2 id="services-title">Complete freight and logistics services</h2>
+        <p>From a single container to a full supply chain, select a service to see how we handle it.</p>
+      </div>
+      <div class="svc-grid" id="svcGrid"></div>
+    </div>
+  </section>
+
+  <section class="section values on-dark" aria-labelledby="values-title">
+    <div class="wrap values-grid">
+      <div>
+        <span class="kicker" style="color:var(--gold-soft)">Our core values</span>
+        <h2 id="values-title">At STS, we don’t just move cargo. We move businesses forward.</h2>
+        <p class="lede">With reliability, precision, and trust at the core of everything we do, we are your dependable partner in logistics.</p>
+        <a class="btn btn-gold" href="#contact" data-service="">Talk to our team</a>
+      </div>
+      <ul class="val-list">
+        <li>Integrity</li><li>Reliability</li><li>Efficiency</li><li>Customer Focus</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <span class="kicker">Contact us</span>
+        <h2 id="contact-title">Submit your enquiry and we will respond promptly</h2>
+        <p class="lede">Tell us what you are shipping and where it needs to go. Extra detail helps us reply faster.</p>
+        <ul class="cinfo">
+          <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.100 7-11.500A7 7 0 005 9.500C5 14.900 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+            <div><b>Office</b><span>M2-28, 2nd Floor, City Mall<br>Lorong City Mall, Jalan Lintas<br>Kota Kinabalu, Sabah 88300, Malaysia</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=City+Mall+Lorong+City+Mall+Jalan+Lintas+Kota+Kinabalu" target="_blank" rel="noopener">View on Google Maps</a></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.500" width="10" height="19" rx="2"/><path d="M11 18.500h2"/></svg></span>
+            <div><b>Mobile</b><a href="tel:+60128666368">+6012 866 6368</a></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.500 7l8.500 6 8.500-6"/></svg></span>
+            <div><b>Email</b><a href="mailto:info@stslogistics.com.my">info@stslogistics.com.my</a></div></li>
+        </ul>
+      </div>
+
+      <form class="form" id="enquiry" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <h3>Request a quote</h3>
+        <p class="note">All fields are required.</p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-company">Company name</label><input id="f-company" name="company" type="text" autocomplete="organization" required></div>
+        </div>
+        <div class="field"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field">
+          <label for="f-service">Service</label>
+          <select id="f-service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Sea Freight (FCL &amp; LCL)</option>
+            <option>Air Freight</option>
+            <option>Cold Chain Logistics</option>
+            <option>Warehousing &amp; Distribution</option>
+            <option>Customs Clearance</option>
+            <option>Event Logistics</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Your enquiry</label><textarea id="f-msg" name="message" required placeholder="Cargo type, quantity, origin, destination and target dates"></textarea></div>
+        <button class="btn btn-gold" type="submit" id="sendBtn">Send message</button>
+        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="foot-logo" href="#top" aria-label="STS Logistics, home"><img src="images/sts-logo.jpg" alt="STS Logistics" width="114" height="44"></a>
+      <p>A Sabah-based freight forwarder, established in 2007, delivering reliable logistics across air, sea, and land.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="#about">About us</a></li><li><a href="#services">Our services</a></li><li><a href="#contact">Contact us</a></li></ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul id="footSvc"></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>M2-28, 2nd Floor, City Mall<br>Lorong City Mall, Jalan Lintas<br>Kota Kinabalu, Sabah 88300</li>
+        <li><a href="tel:+60128666368">+6012 866 6368</a></li>
+        <li><a href="mailto:info@stslogistics.com.my">info@stslogistics.com.my</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap foot-bottom-row">
+      <span>© Copyright 2026 STS. All rights reserved.</span>
+      <span class="credit">
+        <img src="https://www.stslogistics.com.my/images/click4techlogo-white.png" alt="" width="80" height="26">
+        <span>Website developed and managed by <a href="https://click4techsolutions.com/" target="_blank" rel="noopener">Click 4 Tech Solutions</a>. Technical issues: <a href="mailto:admin@stslogistics.com.my">admin@stslogistics.com.my</a></span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="svc-dialog" id="dlg" aria-labelledby="dlgTitle">
+  <div id="dlgContent"></div>
+</dialog>
+
+<script>
+(function () {
+  var IMG = "https://www.stslogistics.com.my/images/headers/";
+  var SERVICES = [
+    { id: "sea", name: "Sea Freight (FCL & LCL)", short: "Sea freight", form: "Sea Freight (FCL & LCL)", tag: "Flexible. Cost-Effective. Global.", img: IMG + "seafreight.png",
+      blurb: "Full Container Load (FCL) and Less-than-Container Load (LCL) shipments across major global shipping routes.",
+      intro: ["In today’s fast-paced global economy, efficient and reliable shipping plays a vital role in business success. STS Logistics provides comprehensive sea freight solutions designed to support international trade and ensure seamless cargo movement across global markets.",
+              "With a strong network of trusted shipping partners and extensive industry expertise, we deliver cost-effective, flexible, and dependable ocean freight services tailored to your business needs."],
+      cols: [["Sea Freight Core Services", ["We specialize in handling both Full Container Load (FCL) and Less-than-Container Load (LCL) shipments, providing flexible solutions for varying cargo volumes. Our team ensures efficient coordination, proper handling, and timely delivery across major global shipping routes.", "For large-scale shipments, FCL offers dedicated container space for maximum security and efficiency. For smaller consignments, LCL enables cost-effective consolidation without compromising reliability."]],
+             ["Comprehensive Solutions", ["STS Logistics offers end-to-end sea freight services, covering everything from booking and documentation to port handling and final delivery. Our experienced team works closely with shipping lines and port authorities to ensure smooth operations and minimal delays.", "By leveraging our global network, we provide reliable transit schedules and seamless coordination, giving you complete peace of mind."]],
+             ["Operational Excellence", ["With a strong focus on reliability and efficiency, we ensure your cargo is handled securely and delivered on time. Our streamlined processes and proactive communication keep you informed at every stage."]]],
+      benefits: ["Competitive Freight Rates", "Flexible FCL & LCL Options", "Global Port Coverage", "End-to-End Coordination", "Real-Time Tracking"],
+      close: "STS Logistics delivers dependable sea freight solutions that support your business growth. Whether you are expanding globally or optimizing your supply chain, we are your trusted logistics partner." },
+    { id: "air", name: "Air Freight", short: "Air freight", form: "Air Freight", tag: "Fast. Secure. Reliable.", img: IMG + "airfreight.png",
+      blurb: "Fast, secure air cargo for time-sensitive, high-value, and priority shipments.",
+      intro: ["When speed and reliability are critical, air freight becomes the ideal solution. At STS Logistics, we provide fast, secure, and efficient air cargo services designed to meet urgent shipping demands across global markets.", "With access to a wide network of international airline partners, we ensure timely delivery and seamless coordination for all types of cargo."],
+      cols: [["Air Freight Core Services", ["We specialize in handling time-sensitive, high-value, and priority shipments. Our team ensures careful handling, secure packaging, and efficient coordination with airline carriers."]],
+             ["Comprehensive Solutions", ["From pickup to final delivery, we manage documentation, customs coordination, and scheduling to ensure smooth operations with minimal delays."]],
+             ["Operational Excellence", ["Our experienced team ensures efficient planning and real-time communication, giving you full visibility and control over your shipments at every stage."]]],
+      benefits: ["Fast Transit Times", "Global Airline Network", "Secure Cargo Handling", "Flexible Scheduling", "Door-to-Door Delivery"],
+      close: "STS Logistics delivers speed, reliability, and precision in every air shipment, helping your business stay ahead in a competitive global market." },
+    { id: "cold", name: "Cold Chain Logistics", short: "Cold chain", form: "Cold Chain Logistics", tag: "Controlled. Compliant. Reliable.", img: IMG + "Coldchainlogistics.png",
+      blurb: "Frozen, chilled, and pharmaceutical cargo in temperature-controlled transport and storage.",
+      intro: ["Transporting temperature-sensitive goods requires precision, strict control, and reliable systems. STS Logistics provides advanced cold chain logistics solutions to maintain product quality, safety, and compliance throughout the entire supply chain."],
+      cols: [["Cold Chain Core Services", ["We handle frozen, chilled, and pharmaceutical cargo using advanced temperature-controlled transport and storage systems to ensure product integrity at every stage."]],
+             ["Comprehensive Solutions", ["Our services include refrigerated transportation, secure cold storage, and continuous monitoring to maintain strict temperature conditions from origin to final delivery."]],
+             ["Operational Excellence", ["We apply strict handling protocols and advanced monitoring technologies to ensure consistent temperature control, minimizing risks and ensuring compliance with industry standards."]]],
+      benefits: ["Temperature-Controlled Transport", "Cold Storage Facilities", "Continuous Monitoring", "Compliance with Standards", "Food & Pharmaceutical Ready"],
+      close: "STS Logistics ensures your temperature-sensitive cargo arrives safely and efficiently, maintaining product quality, regulatory compliance, and reliability throughout the journey." },
+    { id: "wh", name: "Warehousing & Distribution", short: "Warehousing", form: "Warehousing & Distribution", tag: "Secure. Scalable. Efficient.", img: IMG + "Warehousendistribution.png",
+      blurb: "Secure storage, inventory tracking, and distribution, from fulfillment to last-mile delivery.",
+      intro: ["Efficient storage and distribution are essential to maintaining a smooth and reliable supply chain. STS Logistics provides secure, scalable, and cost-effective warehousing solutions tailored to meet the unique needs of your business."],
+      cols: [["Warehousing Core Services", ["We offer comprehensive storage solutions, inventory tracking, and distribution services supported by modern warehouse management systems to ensure accuracy and efficiency."]],
+             ["Comprehensive Solutions", ["From inventory management and order processing to fulfillment and last-mile delivery, we ensure seamless operations across your entire supply chain."]],
+             ["Operational Excellence", ["Our optimized processes and experienced team ensure accurate inventory control, reduced handling time, and timely distribution to meet your business demands."]]],
+      benefits: ["Secure Storage", "Inventory Management", "Order Fulfillment", "Distribution & Delivery", "Flexible Storage Options"],
+      close: "STS Logistics enhances your supply chain performance with efficient, reliable, and scalable warehousing and distribution solutions designed to support your business growth." },
+    { id: "customs", name: "Customs Clearance", short: "Customs clearance", form: "Customs Clearance", tag: "Efficient. Compliant. Hassle-Free.", img: IMG + "Customsclearance.png",
+      blurb: "Accurate documentation and compliance for smooth import and export clearance.",
+      intro: ["Customs procedures can be complex and time-consuming, requiring accuracy and strict compliance with regulations. STS Logistics ensures smooth, efficient, and hassle-free customs clearance for all import and export shipments."],
+      cols: [["Customs Core Services", ["We manage all documentation, compliance requirements, and coordination with customs authorities to ensure fast and accurate processing of your shipments."]],
+             ["Comprehensive Solutions", ["Our experienced team ensures precise documentation and full adherence to regulations, helping you avoid delays, penalties, and unnecessary complications."]],
+             ["Operational Excellence", ["We streamline customs procedures through efficient planning, proactive communication, and strong coordination with authorities to ensure smooth cargo movement."]]],
+      benefits: ["Fast Clearance Process", "Full Regulatory Compliance", "Accurate Documentation", "Reduced Delays & Risks", "Import & Export Expertise"],
+      close: "STS Logistics ensures your cargo moves through customs quickly, efficiently, and without complications, giving you peace of mind and uninterrupted supply chain operations." },
+    { id: "event", name: "Event Logistics", short: "Event logistics", form: "Event Logistics", tag: "Precise. Reliable. Seamless.", img: IMG + "Eventlogistics.png",
+      blurb: "Transport, setup, and dismantling for exhibitions, trade shows, and corporate events.",
+      intro: ["Successful events require precise planning, coordination, and flawless execution. STS Logistics provides reliable logistics support for exhibitions, trade shows, and corporate events, ensuring every detail is handled with professionalism and care."],
+      cols: [["Event Logistics Core Services", ["We manage transportation, handling, and setup of event materials with precision, ensuring all items arrive safely and are positioned correctly for your event."]],
+             ["Comprehensive Solutions", ["From packing and secure delivery to on-site coordination and dismantling, we ensure smooth execution at every stage of your event logistics."]],
+             ["Operational Excellence", ["Our experienced team ensures every detail is managed efficiently, minimizing risks, avoiding delays, and delivering a seamless event experience."]]],
+      benefits: ["End-to-End Planning", "Timely Delivery & Setup", "Delicate Item Handling", "On-Site Coordination", "Reliable Execution"],
+      close: "STS Logistics ensures your events run smoothly and successfully with professional, dependable, and well-coordinated logistics support tailored to your requirements." }
+  ];
+
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) { if (k === "text") n.textContent = attrs[k]; else n.setAttribute(k, attrs[k]); });
+    (kids || []).forEach(function (c) { n.appendChild(c); });
+    return n;
+  }
+
+  var grid = document.getElementById("svcGrid"), footSvc = document.getElementById("footSvc");
+  var dlg = document.getElementById("dlg"), dlgContent = document.getElementById("dlgContent");
+  var lastTrigger = null;
+
+  SERVICES.forEach(function (s, i) {
+    var card = el("button", { type: "button", "class": "svc-card", "aria-haspopup": "dialog" }, [
+      el("div", { "class": "ph" }, [el("img", { src: s.img, alt: "", loading: "lazy", width: "640", height: "400" })]),
+      el("div", { "class": "svc-body" }, [
+        el("h3", { text: s.name }),
+        el("span", { "class": "tag", text: s.tag }),
+        el("p", { text: s.blurb }),
+        el("span", { "class": "svc-more", text: "Learn more" })
+      ])
+    ]);
+    card.addEventListener("click", function () { openDlg(i, card); });
+    grid.appendChild(card);
+
+    var li = el("li", {}, [el("a", { href: "#services", text: s.name })]);
+    li.firstChild.addEventListener("click", function (e) { e.preventDefault(); document.getElementById("services").scrollIntoView(); openDlg(i, li.firstChild); });
+    footSvc.appendChild(li);
+  });
+
+  function openDlg(i, trigger) {
+    var s = SERVICES[i];
+    lastTrigger = trigger;
+    dlgContent.innerHTML = "";
+    var wrap = el("div", { style: "position:relative" });
+    wrap.appendChild(el("img", { "class": "dlg-photo", src: s.img, alt: s.name + " by STS Logistics" }));
+    var close = el("button", { type: "button", "class": "dlg-close", "aria-label": "Close", text: "×" });
+    close.addEventListener("click", function () { dlg.close(); });
+    wrap.appendChild(close);
+    var body = el("div", { "class": "dlg-body" });
+    body.appendChild(el("h3", { id: "dlgTitle", text: s.name }));
+    body.appendChild(el("p", { "class": "dlg-tag", text: s.tag }));
+    body.appendChild(el("div", { "class": "dlg-intro" }, s.intro.map(function (t) { return el("p", { text: t }); })));
+    body.appendChild(el("div", { "class": "dlg-cols" }, s.cols.map(function (c) {
+      return el("div", { "class": "dlg-col" }, [el("h4", { text: c[0] })].concat(c[1].map(function (t) { return el("p", { text: t }); })));
+    })));
+    body.appendChild(el("ul", { "class": "dlg-ben", "aria-label": "Key benefits" }, s.benefits.map(function (b) { return el("li", { text: b }); })));
+    body.appendChild(el("p", { "class": "dlg-close-line", text: s.close }));
+    var actions = el("div", { "class": "dlg-actions" });
+    var cta = el("button", { type: "button", "class": "btn btn-gold", text: "Request a quote for " + s.short.toLowerCase() });
+    cta.addEventListener("click", function () {
+      document.getElementById("f-service").value = s.form;
+      dlg.close();
+      document.getElementById("contact").scrollIntoView();
+    });
+    var back = el("button", { type: "button", "class": "btn btn-navy", text: "Back to services" });
+    back.addEventListener("click", function () { dlg.close(); });
+    actions.appendChild(cta); actions.appendChild(back);
+    body.appendChild(actions);
+    wrap.appendChild(body);
+    dlgContent.appendChild(wrap);
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+    dlg.scrollTop = 0;
+  }
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener("close", function () { if (lastTrigger && lastTrigger.focus) lastTrigger.focus(); });
+
+  /* Quote links pre-select the service */
+  var serviceSel = document.getElementById("f-service");
+  var menuBtn = document.getElementById("menuBtn"), nav = document.getElementById("nav");
+  function closeMenu() { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[data-service]");
+    if (!a) return;
+    var v = a.getAttribute("data-service");
+    if (v) serviceSel.value = v;
+    closeMenu();
+  });
+  menuBtn.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  nav.addEventListener("click", function (e) { if (e.target.tagName === "A") closeMenu(); });
+
+  /* Enquiry form (Netlify Forms) with a clear fallback */
+  var form = document.getElementById("enquiry"), status = document.getElementById("formStatus"), btn = document.getElementById("sendBtn");
+  function say(msg, cls) { status.textContent = msg; status.className = "status " + (cls || ""); }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var missing = Array.prototype.filter.call(form.querySelectorAll("[required]"), function (f) { return !f.value.trim(); });
+    if (missing.length) {
+      missing[0].focus();
+      var lbl = missing[0].labels && missing[0].labels[0] ? missing[0].labels[0].textContent.toLowerCase() : "all fields";
+      say("Please fill in " + lbl + ".", "err"); return;
+    }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email.value.trim())) { form.email.focus(); say("Enter a valid email address, for example name@company.com.", "err"); return; }
+    btn.disabled = true; say("Sending…", "");
+    var body = new URLSearchParams(new FormData(form)).toString();
+    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+      .then(function (r) { if (!r.ok) throw new Error("bad status"); form.reset(); say("Thank you. We have your enquiry and will reply to your email address.", "ok"); })
+      .catch(function () { say("Your message could not be sent. Please email info@stslogistics.com.my or call +6012 866 6368.", "err"); })
+      .then(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
