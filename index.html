@@ -194,6 +194,7 @@ dialog.svc-dialog::backdrop { background: rgba(30, 8, 48, .72); }
 .btn-ghost:hover { background: var(--tint); }
 .confirm { background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--gold); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(24px, 3.5vw, 42px); display: grid; gap: 1rem; justify-items: start; }
 .confirm:focus { outline: none; }
+.confirm-logo { display: block; height: 56px; width: auto; max-width: 100%; margin-bottom: .2rem; }
 .confirm-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--purple); display: grid; place-items: center; }
 .confirm-icon svg { width: 32px; height: 32px; fill: none; stroke: var(--gold); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .confirm h3 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; }
@@ -420,6 +421,7 @@ dialog.svc-dialog::backdrop { background: rgba(30, 8, 48, .72); }
       </form>
 
       <div class="confirm" id="confirm" hidden tabindex="-1" aria-labelledby="confirmTitle">
+        <img class="confirm-logo" src="images/sts-logo.jpg" alt="STS Logistics" width="168" height="56">
         <div class="confirm-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div>
         <h3 id="confirmTitle">Thank you. Your enquiry has been sent.</h3>
         <p class="confirm-text">We have received your enquiry, and a member of the STS team will reply to the email address below.</p>
